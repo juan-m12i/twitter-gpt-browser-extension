@@ -11,12 +11,12 @@
   "content_scripts": [
     {
       "matches": ["https://twitter.com/*"],
-      "js": ["./content.js"],
+      "js": ["./content.js", "./modal.js", "./open-ai-api.js", "secrets.js"],
       "run_at": "document_idle",
       "css": ["styles.css"]
     }
   ],
   "permissions": [
-    "*://catfact.ninja/*"
+    "*://api.openai.com/*"
    ]
 }
