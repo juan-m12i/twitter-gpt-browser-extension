@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "OpenAI Twitter Integration",
+  "version": "1.0",
+  "description": "Add OpenAI GPT-3.5 Turbo explanations to tweets.",
+  "icons": {
+    "48": "openai.svg",
+    "96": "openai.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["./content.js"],
+      "run_at": "document_idle",
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": [
+    "*://catfact.ninja/*"
+   ]
+}

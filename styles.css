@@ -1,0 +1,41 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .textbox {
+    width: 100%;
+    height: 150px;
+    resize: none;
+  }
+  
+  .send-button,
+  .close-button {
+    margin-top: 10px;
+  }
+  
+  .response-area {
+    margin-top: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  
