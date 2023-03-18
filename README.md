@@ -29,6 +29,9 @@ This script will create an Extension.zip file in the /dist folder.
 2. Click "Load Temporary Extension" and select the Extension.zip file from the /dist folder.
 3. Go to twitter.com and click the OpenAI icon next to each tweet    Add tests to ensure the functionality of the extension.
 
+## Example
+<img width="603" alt="image" src="https://user-images.githubusercontent.com/11706611/226071685-4ad9b3dd-ccc0-401b-84d1-1f4ea2c1b62e.png">
+
 
 ## To-dos
 - Add tests to ensure the functionality of the extension.
