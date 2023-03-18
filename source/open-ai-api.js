@@ -1,5 +1,7 @@
 const OPEN_AI_API_URL = "https://api.openai.com/v1/chat/completions";
 
+console.log('open-ai-api.js loaded');
+
 async function fetchOpenAIResponse(messages) {
   const response = await fetch(OPEN_AI_API_URL, {
     method: "POST",

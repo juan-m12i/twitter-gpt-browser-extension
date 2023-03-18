@@ -1,4 +1,8 @@
-function showModal(tweetText) {
+
+console.log('modal.js loaded');
+
+function showModal(prefilledPrompt) {
+  console.log('showing modal')
     const modal = document.createElement('div');
     modal.classList.add('modal');
   
@@ -7,7 +11,7 @@ function showModal(tweetText) {
   
     const textBox = document.createElement('textarea');
     textBox.classList.add('textbox');
-    textBox.value = `Please explain\n\n${tweetText}`;
+    textBox.value = `${prefilledPrompt}`;
   
     const sendButton = document.createElement('button');
     sendButton.classList.add('send-button');
@@ -19,7 +23,7 @@ function showModal(tweetText) {
     sendButton.onclick = async () => {
       const messages = [
         { role: "system", content: "You are a helpful assistant." },
-        { role: "user", content: `Please explain\n\n${textBox.value}` },
+        { role: "user", content: `${textBox.value}` },
       ];
     
       try {

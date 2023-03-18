@@ -7,7 +7,10 @@
     "48": "openai.svg",
     "96": "openai.svg"
   },
-
+  "browser_action": {
+    "default_icon": "openai.svg",
+    "default_popup": "modal.html"
+  },
   "content_scripts": [
     {
       "matches": ["https://twitter.com/*"],
