@@ -1,11 +1,11 @@
-const API_URL = "https://api.openai.com/v1/chat/completions";
+const OPEN_AI_API_URL = "https://api.openai.com/v1/chat/completions";
 
 async function fetchOpenAIResponse(messages) {
-  const response = await fetch(API_URL, {
+  const response = await fetch(OPEN_AI_API_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${API_KEY}`,
+      "Authorization": `Bearer ${OPEN_AI_API_KEY}`,
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",

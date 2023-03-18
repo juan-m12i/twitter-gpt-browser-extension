@@ -9,7 +9,7 @@ This project is a browser extension for Firefox that adds an OpenAI icon to twee
 2. Create a `secrets.js` file in the `source` directory of the project. Add your OpenAI API key to the file:
 
 ```javascript
-export const API_KEY = "your_openai_api_key";
+const OPEN_AI_API_KEY = "your_openai_api_key";
 ```
 Replace "your_openai_api_key" with your actual OpenAI API key.
 
