@@ -1,0 +1,17 @@
+{
+    "name": "twitter-extension-gpt",
+    "version": "0.2.0",
+    "description": "A brief description of your project",
+    "main": "content.js",
+    "scripts": {
+        "test": "gulp"
+    },
+    "keywords": [],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "jest": "^27.5.1"
+    }
+}
