@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3, // Updated to v3
   "name": "OpenAI Twitter Integration",
   "version": "1.0",
   "description": "Add OpenAI GPT-3.5 Turbo explanations to tweets.",
@@ -7,7 +7,7 @@
     "48": "openai.svg",
     "96": "openai.svg"
   },
-  "browser_action": {
+  "action": { // Changed from "browser_action" to "action"
     "default_icon": "openai.svg",
     "default_popup": "modal.html"
   },
@@ -19,7 +19,7 @@
       "css": ["styles.css"]
     }
   ],
-  "permissions": [
+  "host_permissions": [ // Added "host_permissions" for clarity, even though this is optional since "permissions" would still work in v3
     "*://api.openai.com/*"
-   ]
+  ]
 }
