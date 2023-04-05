@@ -1,4 +1,4 @@
-# OpenAI Twitter Assistant
+# Browser extension to Tweets with GPT
 
 This project is a browser extension for Firefox that adds an OpenAI icon to tweets on Twitter. When you click the icon, a modal opens up where you can ask the OpenAI assistant to explain the tweet or provide more information about its content.
 
